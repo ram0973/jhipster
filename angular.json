@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jhipster": {
+    "spring-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -84,16 +84,16 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "jhipster:build:development",
+            "browserTarget": "spring-app:build:development",
             "proxyConfig": "./webpack/proxy.conf.js",
             "port": 4200
           },
           "configurations": {
             "production": {
-              "browserTarget": "jhipster:build:production"
+              "browserTarget": "spring-app:build:production"
             },
             "development": {
-              "browserTarget": "jhipster:build:development"
+              "browserTarget": "spring-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -107,7 +107,7 @@
       }
     }
   },
-  "defaultProject": "jhipster",
+  "defaultProject": "spring-app",
   "cli": {
     "packageManager": "npm"
   }
