@@ -1,12 +1,10 @@
 package com.me;
 
-import com.me.JhipsterApp;
-import com.me.RedisTestContainerExtension;
+import com.me.SpringApp;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;
 
 /**
@@ -14,7 +12,6 @@ import org.springframework.boot.test.context.SpringBootTest;
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@SpringBootTest(classes = JhipsterApp.class)
-@ExtendWith(RedisTestContainerExtension.class)
+@SpringBootTest(classes = SpringApp.class)
 public @interface IntegrationTest {
 }
